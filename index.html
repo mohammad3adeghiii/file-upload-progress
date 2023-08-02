@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Styles Sheet-->
+    <link rel="stylesheet" href="index.css">
+    <title>Download List</title>
+</head>
+<body>
+    <div class="container"> <!-- Protected Container -->
+        <div class="uploads-area"> <!-- Progressed Area For Upload The Image -->
+            <form enctype="multipart/form-data"> <!-- The Section of form list the protected by image file upload button -->
+                <label for="image-upload" style="cursor: pointer;"> <!-- The label of input type file -->
+                    <i class="fa fa-upload"></i>&nbsp;Browse To Upload Image
+                </label>
+                <input type="file" name="image-upload" id="image-upload" hidden> <!-- this is input is hiddened input -->
+            </form>
+        </div>
+        <div class="progress-area">
+        </div>
+    </div>
+
+    <!-- Scripts Tag -->
+    <script src="index.js"></script>
+</body>
+</html>

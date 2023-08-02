@@ -1,0 +1,107 @@
+/* Color Pallets Variables All Documents */
+:root {
+    --light-blue: #c0d6ed;
+    --snow-color: snow;
+    --dark-blue: #0077bb;
+}
+/* All Documents Style */
+* {
+    margin: 0;
+    padding: 0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/* Design The Body Background */
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--light-blue);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    width: 300px;
+    height: 250px;
+    background-color: var(--snow-color);
+    position: absolute;
+    border-radius: 5px;
+}
+.container .uploads-area {
+    width: 90%;
+    height: 65%;
+    position: absolute;
+    inset: 5%;
+    border-radius: 5px;
+    border: 1px dashed var(--dark-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--dark-blue);
+}
+.container .progress-area {
+    width: 90%;
+    height: 20%;
+    position: absolute;
+    inset: 75% 5%;
+    border-radius: 5px;
+}
+.container .progress-area .progress {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 5px;
+    background-color: var(--dark-blue);
+}
+.container .progress-area .progress .file-icons {
+    width: 20%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--snow-color);
+}
+.container .progress-area .progress .file-info {
+    width: 60%;
+    height: 100%;
+    position: absolute;
+    left: 20%;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    color: var(--snow-color);
+}
+.container .progress-area .progress .file-info .top-section {
+    font-size: 11px;
+}
+.container .progress-area .progress .file-info .progress-back {
+    width: 100%;
+    height: 3%;
+    position: absolute;
+    bottom: 10%;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+}
+.container .progress-area .progress .file-info .progress-back .progress-front {
+    width: 0;
+    height: 3%;
+    position: absolute;
+    bottom: 10%;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    background-color: #c0d6ed;
+}
+.container .progress-area .progress .progress-counter {
+    width: 20%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 80%;
+    color: var(--snow-color);
+}
